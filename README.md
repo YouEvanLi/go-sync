@@ -13,6 +13,25 @@
 
 确保你已经安装了 Go 语言环境。建议使用 Go 1.18 或更高版本。然后使用以下命令获取该库：
 
+### 使用 `go get`
+
+你可以使用以下命令获取该库：
+
+    go get -u github.com/YouEvanLi/go-sync
+
+
+### 使用 `go mod`
+
+在你的项目中，确保 `go.mod` 文件中包含以下内容：
+
+    go 1.18
+    require (
+        github.com/YouEvanLi/go-sync latest
+    )
+
+然后运行：
+    
+    go mod tidy
 
 ## 使用方法
 
